@@ -1,12 +1,13 @@
 [server]
 headless = true
-runOnSave = true
+fileWatcherType = "poll"        # <-- key fix
+runOnSave = false               # reduce watchers
+
+# (optional) only watch the files we actually need
+watchFileGlobs = ["app.py", ".streamlit/*.toml"]
 
 [theme]
 base = "light"
 
 [client]
 toolbarMode = "viewer"
-
-[ui]
-hideTopBar = false
