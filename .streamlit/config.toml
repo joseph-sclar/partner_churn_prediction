@@ -1,0 +1,12 @@
+[server]
+headless = true
+runOnSave = true
+
+[theme]
+base = "light"
+
+[client]
+toolbarMode = "viewer"
+
+[ui]
+hideTopBar = false
